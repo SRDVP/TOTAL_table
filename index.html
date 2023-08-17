@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Total_table</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <script>
+          
+
+        function mun(){
+          var vas=document.getElementById('1').value;
+          var vas1=document.getElementById('2').value;
+
+          var gs= parseFloat(vas)*parseFloat(vas1);
+          document.getElementById('txtresult1').value=gs;
+          
+
+       
+          var vas2=document.getElementById('3').value;
+          var vas3=document.getElementById('4').value;
+
+          var gs1= parseFloat(vas2)*parseFloat(vas3);
+          document.getElementById('txtresult2').value=gs1;
+
+
+          var vas4=document.getElementById('5').value;
+          var vas5=document.getElementById('6').value;
+
+          var gs2= parseFloat(vas2)*parseFloat(vas3);
+          document.getElementById('txtresult3').value=gs2;
+
+          var cal=parseInt(gs)+parseInt(gs1)+parseInt(gs2);
+          document.getElementById('txtresult4').value=cal;
+           // alert(cal);
+          
+
+        }
+        </script>
+
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 me-md-8">
+        <table class="table table-bordered text-center">
+            <table class="table table-bordered text-center" >
+                <tr class="table-primary">
+                      <th>Product Code</th>
+                      <th>Product Name</th>
+                      <th>Qry</th>
+                      <th>Price</th>
+                      <th>Amount</th>
+                </tr>
+                <tr class="table table-hover">
+                      <td> <input type="text"   ></td>
+                      <td> <input type="text"  ></td>
+                      <td> <input type="text" class="txt" name="txt[]" id="1"></td>
+                      <td> <input type="text" class="txt" name="txt[]" id="2"></td>
+                      <td> <input type="text" id="txtresult1"></td>
+                </tr>
+                <tr class="table table-hover">
+                      <td> <input type="text"   ></td>
+                      <td> <input type="text"  ></td>
+                      <td> <input type="text" class="txt" name="txt[]" id="3"></td>
+                      <td> <input type="text" class="txt" name="txt[]" id="4"></td>
+                      <td> <input type="text" id="txtresult2"></td>
+                </tr>
+                <tr class="table table-hover">
+                      <td> <input type="text"   ></td>
+                      <td> <input type="text"  ></td>
+                      <td> <input type="text" class="txt" name="txt[]" id="5"></td>
+                      <td> <input type="text" class="txt" name="txt[]" id="6"></td>
+                      <td> <input type="text" id="txtresult3"></td>
+                </tr>
+                
+                
+            <!-- Add more rows here -->
+          </tbody>
+        </table>
+      </div>
+      <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+        <button type="button" onclick="mun()" class="btn btn-outline-primary me-md-2" style="margin-right: 100px;">Total</button><br><br>
+        <input type="text" id="txtresult4" value="Result is:" style="float:right; margin-right: 10px;">
+    </div>
+       
+        
+    </div>
+  </div>
+            
+  <!-- Include Bootstrap JS (optional) -->
+  
+</body>
+</html>
