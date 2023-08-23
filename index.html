@@ -12,29 +12,29 @@
           
 
         function mun(){
-          var vas=document.getElementById('1').value;
-          var vas1=document.getElementById('2').value;
+          var Qry=document.getElementById('1').value;
+          var Price=document.getElementById('2').value;
 
-          var gs= parseFloat(vas)*parseFloat(vas1);
-          document.getElementById('txtresult1').value=gs;
+          var Amount= parseFloat(Price)*parseFloat(Price);
+          document.getElementById('txtresult1').value=Amount;
           
 
        
-          var vas2=document.getElementById('3').value;
-          var vas3=document.getElementById('4').value;
+          var Qry1=document.getElementById('3').value;
+          var Price1=document.getElementById('4').value;
 
-          var gs1= parseFloat(vas2)*parseFloat(vas3);
-          document.getElementById('txtresult2').value=gs1;
+          var Amount1= parseFloat(Qry1)*parseFloat(Price1);
+          document.getElementById('txtresult2').value=Amount1;
 
 
-          var vas4=document.getElementById('5').value;
-          var vas5=document.getElementById('6').value;
+          var Qry2=document.getElementById('5').value;
+          var Price2=document.getElementById('6').value;
 
-          var gs2= parseFloat(vas4)*parseFloat(vas5);
-          document.getElementById('txtresult3').value=gs2;
+          var Amount2= parseFloat(Qry2)*parseFloat(Price2);
+          document.getElementById('txtresult3').value=Amount2;
 
-          var cal=parseInt(gs)+parseInt(gs1)+parseInt(gs2);
-          document.getElementById('txtresult4').value=cal;
+          var Total=parseInt(Amount)+parseInt(Amount1)+parseInt(Amount2);
+          document.getElementById('txtresult4').value=Total;
            // alert(cal);
           
 
@@ -59,21 +59,21 @@
                       <td> <input type="text"  ></td>
                       <td> <input type="text" class="txt" name="txt[]" id="1"></td>
                       <td> <input type="text" class="txt" name="txt[]" id="2"></td>
-                      <td> <input type="text" id="txtresult1"></td>
+                      <td> <input type="text" id="txtresult1" onclick="mun()"></td>
                 </tr>
                 <tr class="table table-hover">
                       <td> <input type="text"   ></td>
                       <td> <input type="text"  ></td>
                       <td> <input type="text" class="txt" name="txt[]" id="3"></td>
                       <td> <input type="text" class="txt" name="txt[]" id="4"></td>
-                      <td> <input type="text" id="txtresult2"></td>
+                      <td> <input type="text" id="txtresult2" onclick="mun()"></td>
                 </tr>
                 <tr class="table table-hover">
                       <td> <input type="text"   ></td>
                       <td> <input type="text"  ></td>
                       <td> <input type="text" class="txt" name="txt[]" id="5"></td>
                       <td> <input type="text" class="txt" name="txt[]" id="6"></td>
-                      <td> <input type="text" id="txtresult3"></td>
+                      <td> <input type="text" id="txtresult3" onclick="mun()"></td>
                 </tr>
                 
                 
